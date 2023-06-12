@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+    <title>Scoreboard Lab</title>
+</head>
+
+<style>
+    body.debug .container,
+    body.debug .container-fluid {
+        outline: 2px double blue;
+        outline-offset: -2px;
+    }
+
+    body.debug .row {
+        outline: 2px dashed red;
+        outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+        outline: 2px dotted forestgreen;
+        outline-offset: -3px;
+    }
+</style>
+
+<body>
+
+    <header class="container-fluid">
+    </header>
+
+    <main class="container-fluid text-white position-relative">
+        <section class="row my-3">
+            <div class="col-12 d-flex justify-content-between">
+                <button onclick="addPlayer()" class="dark-button">ADD PLAYER</button>
+                <button onclick="resetScore()" class="dark-button">RESET</button>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="col-12">
+                <div id="scoreboard" class="bg-scoreboard">
+                    <div class="d-flex justify-content-center">
+                        <div class="text-center me-5">
+                            <h1 class="team-size shadow-glow">HOME</h1>
+                            <h1 class="score-card score-size shadow-glow" id="homeScore">00</h1>
+                        </div>
+                        <div class="score text-center">
+                            <h1 class="team-size shadow-glow">AWAY</h1>
+                            <h1 class="score-card score-size shadow-glow" id="awayScore">00</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row">
+            <div id="topControlRow" class="col-12 mt-3 d-flex justify-content-center">
+                <button onclick="addScore('home', 2)" class="shadow-glow-subtle score-button">HOME +2</button>
+                <button onclick="addScore('away', 2)" class="shadow-glow-subtle score-button">AWAY +2</button>
+            </div>
+            <div id="bottomControlRow" class="col-12 d-flex justify-content-center">
+                <button onclick="addScore('home', 3)" class="shadow-glow-subtle score-button">HOME +3</button>
+                <button onclick="addScore('away', 3)" class="shadow-glow-subtle score-button">AWAY +3</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid">
+
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

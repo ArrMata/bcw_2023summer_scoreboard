@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+* {
+    font-family: 'Unica One', cursive;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1559369064-c4d65141e408?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(41, 41, 41);
+}
+
+/* .background-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 1%;
+    width: 100%;
+    z-index: -1;
+} */
+
+.score-size {
+    font-size: 15rem;
+}
+
+.team-size {
+    font-size: 5.5rem;
+}
+
+.score-button {
+    background-color: #10218edf;
+    color: white;
+    font-size: 3rem;
+    border: none;
+    border-radius: 1vw;
+    margin: 2vh 2vw;
+    padding: 1vh 1.5vw;
+}
+
+.dark-button {
+    background-color: #7b0a0b;
+    color: white;
+    font-size: 2.5rem;
+    border: none;
+    border-radius: 0.25vw;
+    padding: 0.25vh 3vw;
+}
+
+.bg-scoreboard {
+    padding: 5vh 30vw;
+    margin: 0 15vw;
+    background-color: #10218ed5;
+    border-radius: 1vw;
+    border: 0.15vw solid #6c86ebcb;
+}
+
+.score-card {
+    background-color: #2f439d9a;
+    padding: 0 2vw;
+    border-radius: 1vw;
+    border: 0.15vw solid #4fc7e2c1;
+}
+
+/* #region Utility Classes */
+
+.shadow-glow {
+    text-shadow: 0 5px 10px white;
+}
+
+.shadow-glow-subtle {
+    text-shadow: 0 5px 7px rgba(255, 255, 255, 0.669)
+}
